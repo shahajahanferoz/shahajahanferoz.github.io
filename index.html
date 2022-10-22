@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let car = {
+            brand: "test brand",
+            model: "test model",
+            year_made: "test year made (1997)",
+            give_identity: function(){console.log(this.brand, car.model)}, 
+            move_forward: function(){console.log("I'm moving forward... ")}, 
+            move_backward(){console.log("I'm moving backward...")}, 
+            move_break(){console.log("I'm stopped...")} 
+        }
+
+        let animals = {
+            name: "cat",
+            leg: "4 leg",
+            give_identity: function(){console.log(this.name)},   
+            talk(){console.log("mew mew ...")} 
+        }
+
+        let triangles = {
+            base: 20,
+            height: 50,
+            get_area: function(){console.log(.5*this.base*this.height)}
+        }
+
+        let circle = {
+            radius: 20,
+            get_area: function(){console.log(Math.PI*this.radius*this.radius)},
+            get_diameter: function(){console.log(2*this.radius)},
+            get_circumference: function(){console.log(2*Math.PI*this.radius)}
+        }
+    </script>
+</body>
+</html>
